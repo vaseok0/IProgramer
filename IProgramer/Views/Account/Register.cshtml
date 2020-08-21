@@ -1,0 +1,24 @@
+﻿@model IProgramer.ViewModel.RegisterViewModel
+
+<link rel="stylesheet" href="~/css/StyleReg.css" />
+
+<body class="text-center">
+    <form class="form-signin" method="post" asp-controller="Account" asp-action="Register">
+        <div asp-validation-summary="ModelOnly"></div>
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+        <label asp-for="Login" class="sr-only">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Login" required="" autofocus=""><br />
+        <label asp-for="Email" class="sr-only">Login</label><br />
+        <input type="email" asp-for="Email" class="form-control" placeholder="user@mail.ru" required="" autofocus=""><br />
+        <label asp-for="Password" class="sr-only">Login</label><br />
+        <input type="password" asp-for="Password" class="form-control" placeholder="Password" required="" autofocus=""><br />
+        <label asp-for="PasswordConfirm" class="sr-only">Password</label><br />
+        <input type="password" asp-for="PasswordConfirm" class="form-control" placeholder="PasswordConfirm" required=""><br />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Зарегистрироватся</button>
+        <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
+    </form>
+
+
+    <!----><div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+</body>

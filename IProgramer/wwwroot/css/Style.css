@@ -1,0 +1,151 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccdef0;
+    background-image: radial-gradient(circle 675px at center, #df6965 0%, #228192 100%);
+
+}
+
+.container{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-wraper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 70px;
+	margin-bottom: 90px;
+	
+}
+
+.logo{
+   
+    font-family: "Montserrat - Black";
+	font-weight: 400;
+
+	font-size: 28px;
+	line-height: 1;
+	
+
+    color: #000000;
+
+}
+.logo{
+	color: #5abb33;
+}
+
+.nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav__item {
+	margin-right: 50px;
+}
+.nav__item:last-child{
+	margin-right: 0;
+}
+
+.nav__link{
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+
+}
+.nav__link:hover{
+	text-decoration: underline;
+}
+
+.header-content{
+	padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.header-desc{
+	width: 500px;
+	padding-top: 90px;
+}
+
+.heade__title{
+	font-family: "ExtraBolt";
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 1.3;
+}
+.header__text{
+	font-size: 20px;
+	line-height: 1.7;
+	font-weight: 500;
+}
+
+.header__btn {
+	display: inline-block;
+	height: 65px;
+	padding-left: 35px;
+	padding-right: 35px;
+	border-radius: 60px;
+	background-color: #fadb35;
+	background-image: linear-gradient(to top,#ffcc00, #fadb60 100%);
+	color: #000000;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 65px;
+}
+
+
+.header-photo {
+	width: 670px;
+}
+
+.header__social{
+
+}
+
+.header__social-item{
+	font-size: 27px;
+	color: #000000;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.header__social-item:last-child{
+	margin-right: 0;
+}
+
+.header__social-item:hover{
+	opacity: 0.7;
+}
+
+.footer{
+	width: 100%;
+	height: 114px;
+	background-color: #ee2727;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer::before{
+	content: "";
+	display: table;
+}

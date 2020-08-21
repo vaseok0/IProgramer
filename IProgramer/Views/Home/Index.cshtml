@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="container">
+            <nav class="nav-wraper">
+                <div class="logo"><span>Название</span>Сайта</div>
+
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link" asp-action="Login" asp-controller="Account">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Вторичная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Последовательная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Последовательная</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-desc">
+                    <h1 class="header__title">Главний заголовок</h1>
+
+                    <div class="header__text">
+                        <p>Какойто текст</p>
+                    </div>
+                    
+                    <a asp-action="Register" asp-controller="Account" class="header__btn">Регистрация</a>
+                </div>
+                <div class="header-photo"></div>
+            </div>
+
+            <div class="header__social">
+                <a class="header__social-item" href="#"><i class="fab fa-vk"></i></a>
+                <a class="header__social-item" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="header__social-item" href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <p>Условия пользователя и Политика конфиденциальности</p>
+    </footer>
+</body>
